@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "play with opencv in python"
+date:   2018-02-27 23:24:00 +0800
+categories: 
+---
+
 # play with opencv in python
 
 今天在高度摄像头的时候发现直接用cv2.VideoCapture()得出来的stream总是有100ms的delay，只有10fps左右。我记得在linux使用这个摄像头的时候是可以达到30帧的，所以一直想把这个问题搞定。可是百度google了很久也找不出个所以然，想用别的接口替代好像也没找到。最终只有求助OpenCV官方的文档。
