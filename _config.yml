@@ -40,6 +40,12 @@ defaults:
     values:
       image: true
 
+header_pages:
+  - index.md
+  - articles/index.html
+  - about.md
+  - cv.md
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -49,4 +55,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-staticman_url: http://104.168.141.71:2443/v3/entry/github/zihuiye/zihuiye.github.io/master/comments
+staticman_url: https://hotwinds.zihuiye.com/v3/entry/github/zihuiye/zihuiye.github.io/master/comments

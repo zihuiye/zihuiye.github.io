@@ -1,18 +1,20 @@
 <!-- _includes/comment-form.html -->
 <form method="POST" action="{{ site.staticman_url }}" class="comment-form">
+    <!-- <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcpapQpAAAAAM5Pn9wKmf-c7hhjjm4yeSjAlh29">
+    <input type="hidden" name="options[reCaptcha][secret]" value="6LcpapQpAAAAAIDEPtZd4FY8vyCykg1TqeoUTGl8"> -->
     <input
       name="options[redirect]"
       type="hidden"
       value="{{ page.url | absolute_url }}"
     />
     <input name="options[slug]" type="hidden" value="{{ page.slug }}" />
-  
     <textarea
       class="comment-message"
       name="fields[message]"
       placeholder="Comment (markdown accepted)"
       required
     ></textarea>
+    <!-- <div class="g-recaptcha" data-sitekey="6LcpapQpAAAAAM5Pn9wKmf-c7hhjjm4yeSjAlh29"></div> -->
     <div class="comment-bottom">
       <input
         class="comment-name"
@@ -21,7 +23,15 @@
         placeholder="Name"
         required
       />
+      <input
+        class="comment-email"
+        name="fields[email]"
+        type="text"
+        placeholder="Email"
+        required
+      />
       <button class="comment-submit" type="submit">SEND</button>
     </div>
-  </form>
+</form>
+<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
   

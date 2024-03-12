@@ -1,11 +1,10 @@
 ---
-layout: post
-title:  "叶子辉"
-date:   2024-03-06 21:16:00 +0800
+layout: page
+title:  CV
 categories: resume
 ---
 
-# Resume  
+# 叶子辉  
 
 #### 联系方式
 - **手机：** (+86) 13926130665
