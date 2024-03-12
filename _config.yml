@@ -24,11 +24,11 @@ plugins:
   - jekyll-paginate
 
 paginate: 5
-paginate_path: "articles/page:num"
+paginate_path: "articles/page/:num"
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
 
 # Exclude from processing.
@@ -48,3 +48,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+staticman_url: http://104.168.141.71:2443/v3/entry/github/zihuiye/zihuiye.github.io/master/comments
