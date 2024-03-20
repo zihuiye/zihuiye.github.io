@@ -2,16 +2,22 @@
 {% assign comments = site.data.comments[page.slug] | where_exp: "item", "true" %} 
 {% assign sorted_comments = comments | sort: 'date' %} 
 {% for comment in sorted_comments %}
-<div class="comment">
-  <h3>{{comment.name}}</h3>
-  <time
-    class="post-meta dt-published"
-    datetime="{{ page.date | date_to_xmlschema }}"
-    itemprop="datePublished"
-  >
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    {{ comment.date | date:"%H:%M - %b %-d, %Y, %Y" }}
-  </time>
+<div id="comment-{{forloop.index}}" class="comment" style="border: 1px;">
+  <span>
+    <a href="{{ page.url | absolute_url }}#comment-{{ forloop.index }}">#{{ forloop.index }}</a>
+    <div class="comment__author">{{comment.name}}, 
+        <span class="comment__date">
+            <time
+                class="post-meta dt-published"
+                datetime="{{ page.date | date_to_xmlschema }}"
+                itemprop="datePublished"
+            >
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                {{ comment.date | date:"%H:%M - %b %-d, %Y, %Y" }}
+            </time>
+        </span>
+    </div>
+  </span>
   <p>{{comment.message | strip_html | markdownify }}</p>
 </div>
 {% endfor %}
