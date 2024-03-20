@@ -1,37 +1,54 @@
 <!-- _includes/comment-form.html -->
-<form method="POST" action="{{ site.staticman_url }}" class="comment-form">
-    <!-- <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcpapQpAAAAAM5Pn9wKmf-c7hhjjm4yeSjAlh29">
-    <input type="hidden" name="options[reCaptcha][secret]" value="6LcpapQpAAAAAIDEPtZd4FY8vyCykg1TqeoUTGl8"> -->
+<form class="js-form form" method="POST" action="{{ site.staticman_url }}" autocomplete="off">
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LcZ8J4pAAAAAIkH0nwn4j7Am-xiPT8NOdRFxO3T">
+    <input type="hidden" name="options[reCaptcha][secret]" value="to49FMX++saBpwSfo0dPhHEu4XGjDIdKymC/xglCSfcDYEL7jL0gpn1HIOOKjYzeg4WYQaxr6iqWOw2Ygm0oeqqLrk/BvYACVr1pWFDxfRxff9jvbaCf3Z+qnHET6ZCPEZ6QxWOAXE3+xqdiHSUBc9k6MA0aZoPafdwW3Mi7T3yuj25ljKiEfAAvT9VUqGCwf4L5d6nYf6ZehWRn2WxsM2x4bnZu1rg44Z/vIYNsFcTtrTl1/8cTa9rmAlWs3tehYSyl6rQHa4bQLZzH/yUC9PzW2jNP7/0Kys96RbzOyVTwSMuR71Jyc/1tt53n5ARCgJxMGbIN6RF+nOQNomgjzg==">
     <input
       name="options[redirect]"
       type="hidden"
       value="{{ page.url | absolute_url }}"
     />
     <input name="options[slug]" type="hidden" value="{{ page.slug }}" />
-    <textarea
-      class="comment-message"
-      name="fields[message]"
-      placeholder="Comment (markdown accepted)"
-      required
-    ></textarea>
-    <!-- <div class="g-recaptcha" data-sitekey="6LcpapQpAAAAAM5Pn9wKmf-c7hhjjm4yeSjAlh29"></div> -->
-    <div class="comment-bottom">
-      <input
-        class="comment-name"
-        name="fields[name]"
-        type="text"
-        placeholder="Name"
-        required
-      />
-      <input
-        class="comment-email"
-        name="fields[email]"
-        type="text"
-        placeholder="Email"
-        required
-      />
-      <button class="comment-submit" type="submit">SEND</button>
+    <div class="textfield">
+        <label for="comment-form-name">Name:</label>
+        <br>
+        <input
+            id="comment-form-name"
+            class="comment-name"
+            name="fields[name]"
+            type="text"
+            placeholder="Name"
+            style="width: 40%;"
+            required
+        />
     </div>
+    <div class="textfield">
+        <label for="comment-form-email">E-mail:</label>
+        <br>
+        <input
+            class="comment-email"
+            name="fields[email]"
+            type="text"
+            placeholder="Email"
+            style="width: 40%;"
+            required
+        />
+    </div>
+    <div class="textfield">
+        <label>comment:</label>
+        <br>
+        <textarea 
+            id="comment-form-message"
+            class="comment-message" 
+            name="fields[message]" 
+            placeholder="Comment (markdown accepted)"
+            style="width: 40%;"
+            required
+        ></textarea>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6LcZ8J4pAAAAAIkH0nwn4j7Am-xiPT8NOdRFxO3T">
+    </div>
+    <div class="textfield">
+        <button class="comment-submit" type="submit">SEND</button>
+    </div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </form>
-<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
-  

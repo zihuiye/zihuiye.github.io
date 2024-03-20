@@ -17,19 +17,16 @@ title: Frankie Yep
 email: zihuiye@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-plugins:
-  - jekyll-avatar
-  - jekyll-paginate
+url: "https://zihuiye.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 paginate: 5
-paginate_path: "articles/page/:num"
+paginate_path: /articles/page/:num
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

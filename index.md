@@ -6,4 +6,4 @@ layout: page
 title: ""
 ---
 
-this is home page
+this is index

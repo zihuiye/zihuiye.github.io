@@ -1,15 +1,13 @@
 <!-- _includes/comments.html -->
 <section class="comments">
-    {% if site.data.comments[page.slug] %}
-    <div>
-      <h2>Comments</h2>
-      {% include comment-list.html %}
-    </div>
-    {% endif %}
-  
-    <div>
-      <h2>Leave a Comment</h2>
-      {% include comment-form.html %}
-    </div>
-  </section>
-  
+{% if site.data.comments[page.slug] %}
+<div>
+    <h3>Comments</h3>
+    {% include comment-list.html %}
+</div>
+{% endif %}
+<div id="respond" class="comment__new">
+    <h3>Leave a Comment</h3>
+    {% include comment-form.html %}
+</div>
+</section>

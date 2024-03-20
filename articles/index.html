@@ -1,21 +1,18 @@
 ---
-layout: default
+layout: page
 title: Articles
 ---
-
 <!-- This loops through the paginated posts -->
 <ul>
 {% for post in paginator.posts %}
   <li>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <p class="author">
       <span class="date">{{ post.date }}</span>
     </p>
   </li>
 {% endfor %}
 </ul>
-
-
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}

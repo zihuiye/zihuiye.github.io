@@ -40,7 +40,7 @@ comments:
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
   # Otherwise, entries will be published to the main branch automatically.
-  moderation: true
+  moderation: false
 
   # Name of the site. Used in notification emails.
   name: "zihuiye.com"
@@ -76,4 +76,10 @@ comments:
   transforms:
     email: md5
   
+  reCaptcha:
+    enabled: true
+    siteKey: "6LcZ8J4pAAAAAIkH0nwn4j7Am-xiPT8NOdRFxO3T"
+    secret: "to49FMX++saBpwSfo0dPhHEu4XGjDIdKymC/xglCSfcDYEL7jL0gpn1HIOOKjYzeg4WYQaxr6iqWOw2Ygm0oeqqLrk/BvYACVr1pWFDxfRxff9jvbaCf3Z+qnHET6ZCPEZ6QxWOAXE3+xqdiHSUBc9k6MA0aZoPafdwW3Mi7T3yuj25ljKiEfAAvT9VUqGCwf4L5d6nYf6ZehWRn2WxsM2x4bnZu1rg44Z/vIYNsFcTtrTl1/8cTa9rmAlWs3tehYSyl6rQHa4bQLZzH/yUC9PzW2jNP7/0Kys96RbzOyVTwSMuR71Jyc/1tt53n5ARCgJxMGbIN6RF+nOQNomgjzg=="
+
+
 
