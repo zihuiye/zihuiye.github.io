@@ -2,7 +2,7 @@
 layout: article
 title:  "Welcome to Jekyll!"
 date:   2017-06-25 15:43:35 +0800
-categories: jekyll update
+tags: jekyll update
 author: hello
 comments: true
 ---

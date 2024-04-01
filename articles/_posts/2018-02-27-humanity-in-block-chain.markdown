@@ -2,7 +2,6 @@
 layout: post
 title:  "区块链之中人性的博弈"
 date:   2018-02-27 23:24:00 +0800
-categories: 
 ---
 
 # 熟悉的曲线

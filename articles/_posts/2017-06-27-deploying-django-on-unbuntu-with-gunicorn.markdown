@@ -2,7 +2,7 @@
 layout: post
 title:  "在ubuntu上用nginx和gunicorn部署Django"
 date:   2017-06-27 23:24:00 +0800
-categories: Django ubnutu nginx gunicorn
+tags: Django ubnutu nginx gunicorn
 ---
 
 想做这个真是进了很多坑，但是要做部署真是的是绕不过去的，所以硬着头皮就上了。结果还是能跑起来就写个文档记录一下。
