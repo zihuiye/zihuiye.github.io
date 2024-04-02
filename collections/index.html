@@ -6,14 +6,12 @@ category_name: collections
 <div id="archives">
   <div class="archive-group">
     {% capture page.category_name %}{{ page.category_name | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
-
-    <h3 class="category-head">{{ page.category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
+    <div id="#{{ page.category_name | slugize }}"></div>
+    <a name="{{ page.category_name | slugize }}"></a>
     {% for post in site.categories[page.category_name] %}
     <article class="archive-item">
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      <span class="date">{{ post.date }}</span>
     </article>
     {% endfor %}
   </div>

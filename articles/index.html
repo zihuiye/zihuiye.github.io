@@ -7,6 +7,10 @@ title: Articles
 {% for post in paginator.posts %}
   <li>
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {% for cat in post.categories %}
+        <h5><a href="/{{ cat }}">{{ cat }}</a></h5>
+        {% if forloop.index != 1 %},{% endif %}
+    {% endfor %}
     <p class="author">
       <span class="date">{{ post.date }}</span>
     </p>
