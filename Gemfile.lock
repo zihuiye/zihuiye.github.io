@@ -86,8 +86,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-paginate (~> 1.0)
-  minima (~> 2.0)
+  jekyll-paginate
+  minima
   tzinfo-data
 
 BUNDLED WITH
